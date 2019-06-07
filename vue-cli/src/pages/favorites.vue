@@ -3,28 +3,23 @@
     <h1 class="overview-favorite-pokemon__title">
       Your favorite Pokémon
     </h1>
-    <router-link
-      class="nes-btn"
-      to="/"
-    >
-      Go back
-    </router-link>
+    <router-link class="nes-btn" to="/">Go back</router-link>
+
+
+
+    
     <div class="overview-favorite-pokemon" />
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
-    export default {
-        computed: {
-            ...mapState([
-            'stateFavoritePokemonList'
-            ])
-        }
-    }
+export default {
+  
+}
 </script>
 
-<style scoped>
+
+<style lang="scss" scoped>
 .overview-favorite-pokemon {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -1,49 +1,70 @@
 <template>
   <div id="app">
-    
+  
 
-<router-view/>
+
+    <router-view/>
+        <div>Select a Pokemon!</div>
+
+ <PokemonList class="side" @select="selectPokemon" />
+    <PokemonDetails class="main" v-if="selectedPokemon" :pokemon="selectedPokemon"/>
 
 
   </div>
 </template>
 
 <script>
+  import PokemonList from "./components/PokemonList";
+import PokemonDetails from "./components/PokemonDetails";
 export default {
-  name: 'app',
-  data () {
+  name: "App",
+  components: {
+    PokemonList,
+    PokemonDetails,
+  },
+  
+  data() {
     return {
-      msg: 'Welcome to the Pokédex App'
+      selectedPokemon: null
+    };
+  },
+  
+  methods: {
+    selectPokemon(pokemon) {
+      this.selectedPokemon = pokemon;
     }
   }
-}
+};
+
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
 
-h1, h2 {
-  font-weight: normal;
-}
+  h1,
+  h2 {
+    font-weight: normal;
+  }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
 
-a {
-  color: #42b983;
-}
+  a {
+    color: #42b983;
+  }
+
 </style>
