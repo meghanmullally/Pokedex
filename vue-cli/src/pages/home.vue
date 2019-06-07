@@ -3,9 +3,8 @@
     <img src="./../assets/logo-pixel.gif" alt="pokémon">
     <h1>Home page</h1>
 
-   
     
-    <div class="select-pokemon-content" />
+    <div class="select-pokemon-content"/>
   </div>
 </template>
 
@@ -44,7 +43,7 @@
   .select-pokemon-content {
     text-align: left;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
   }
 
 </style>
