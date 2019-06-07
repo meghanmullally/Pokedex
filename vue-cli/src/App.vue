@@ -2,7 +2,7 @@
   <div id="app">
     
 
-<router-view />
+<router-view/>
 
 
   </div>
@@ -13,7 +13,7 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to the Pokédex App'
     }
   }
 }

@@ -1,39 +1,50 @@
 <template>
   <div class="select-pokemon-page">
-    <img
-      src="./../assets/logo-pixel.gif"
-      alt="pokémon"
-    >
+    <img src="./../assets/logo-pixel.gif" alt="pokémon">
     <h1>Home page</h1>
+
+   
+    
     <div class="select-pokemon-content" />
   </div>
 </template>
 
 <script>
-export default {
+  import {
+    mapState,
+    mapActions
+  } from 'vuex'
+  export default {
+    computed: {
+      ...mapState(['statePokemonDataList', 'stateFavoritePokemonList']),
+    },
     async created() {
-        const pokemonData = await this.getPokemonData()
-        this.setPokemonData(pokemonData)
+      const pokemonData = await this.getPokemonData()
+      this.setPokemonData(pokemonData)
     },
     methods: {
-        async getPokemonData() {
-            const data = await fetch(
-                'https://pokeapi.co/api/v2/pokemon?limit=151'
-            )
-            const json = await data.json()
-            return json.results
-        }
-    }
-}
+      async getPokemonData() {
+        const data = await fetch(
+          'https://pokeapi.co/api/v2/pokemon?limit=151'
+        )
+        const json = await data.json()
+        return json.results
+      },
+      ...mapActions(['setPokemonData', 'addFavorite', 'deleteFavorite', 'eraseFavoritePokemonList']),
+    },
+  }
+
 </script>
 
 <style scoped>
-.select-pokemon-page {
+  .select-pokemon-page {
     text-align: center;
-}
-.select-pokemon-content {
+  }
+
+  .select-pokemon-content {
     text-align: left;
     display: flex;
     justify-content: space-evenly;
-}
+  }
+
 </style>
