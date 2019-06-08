@@ -4,6 +4,7 @@
       <li class="list-group-item" v-for="pokemon in api.results" v-text="pokemon.name" :key="pokemon.api"></li>
     </ul>
 
+
     <button class="btn btn-primary" v-if="api.previous" @click="previous">Previous</button>
     <button class="btn btn-primary" v-if="api.next" @click="next">Next</button>
   </div>
@@ -21,7 +22,7 @@
       this.fetchPokemons();
     },
     methods: {
-      fetchPokemons(url = 'http://pokeapi.co/api/v2/pokemon') {
+      fetchPokemons(url = 'https://pokeapi.co/api/v2/pokemon?limit=151') {
         axios.get(url)
           .then(({ data }) => this.api = data);
       },
@@ -40,5 +41,9 @@
   padding: 20px;
   margin: 10px;
 }
+
+/* .list-group-item {
+  display: inline;  
+} */
 
 </style>

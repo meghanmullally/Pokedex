@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-
-    <img src="./assets/logo-pixel.gif">
+    <img src="./assets/logo-pixel.gif" @click.prevent="playSound('http://23.237.126.42/ost/pokemon-original-game-soundtrack/wahjdqip/101%20-%20opening.mp3')">
 
     <nav class=" navbar navbar-expand-lg fixed-top row">
 
@@ -28,7 +27,15 @@
         msg: 'Welcome to Pokedex App'
       }
 
+    },
+     methods: {
+    playSound (sound) {
+      if(sound) {
+        var audio = new Audio(sound);
+        audio.play();
+      }
     }
+  }
   }
 
 </script>
