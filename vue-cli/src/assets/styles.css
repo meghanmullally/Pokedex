@@ -1,0 +1,18 @@
+html,
+body,
+pre,
+code,
+kbd,
+samp,
+nav,
+li,
+col {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 160%;
+}
+
+/* https://builtvisible.com/image-scaling-in-css */
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+}
