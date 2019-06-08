@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+
  
 Vue.use(VueAxios, axios)
 
@@ -17,10 +18,17 @@ require('./assets/styles.css')
 
 Vue.config.productionTip = false;
 
+Vue.component('pokemon-card', {
+  props: ['cardTitle'],
+  template: '<h3>{{postTitle}}</h3>'
+});
 
-// import Footer from './components/footer.vue';
-// Vue.component('app-footer', Footer);
-
+Vue.component('button-counter', {
+  data: function() {
+    return {type: Number, count: 0}
+  },
+  template: '<button v-on:click="count++">You clicked me {{count}} times.</button>'
+})
 
 
 new Vue({
