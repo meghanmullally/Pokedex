@@ -51,3 +51,4 @@ When reading about the pros and cons of SEO, I noticed there are a lot of things
 ### Other 
 - [audio](https://downloads.khinsider.com/game-soundtracks/album/pokemon-gameboy-sound-collection)
 - [background-image](https://wallpapercave.com/w/wp2513249)
+- [SEO reference](https://codeburst.io/essential-guide-to-improve-seo-in-single-page-application-vue-js-d710c0968aa2)
