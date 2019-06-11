@@ -20,7 +20,7 @@ Vue.config.productionTip = false;
 
 Vue.component('pokemon-card', {
   props: ['cardTitle'],
-  template: '<h3>{{postTitle}}</h3>'
+  template: '<h3>{{postTitle}}</h3><ol>{{pokeTypes}}</ol>'
 });
 
 Vue.component('button-counter', {

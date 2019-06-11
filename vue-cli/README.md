@@ -1,9 +1,30 @@
-# vue-cli
+# Pokemon App
 
-> A Vue.js project
+This is a Pokémon app which displays the Pokémon, the types of Pokémn in Generation I.
+
+There are three pages; home, types, pokemon.
+
+If you click on the header image the opening theme song of the Pokemon game will start playing 
+
+
+![Home page screenshot](home-screenshot)
+![Types page screenshot](types-screenshot)
+![Pokemon list page screenshot](pokemon-screenshot)
+
+
+## Built with 
+- [VUE.JS](https://vuejs.org/)
+- [BootStrap](https://getbootstrap.com/)
+- [NES.CSS](https://nostalgic-css.github.io/NES.css/)
+- [PokeAPI](https://pokeapi.co/)
+
+
+
+
+
 
 ## Build Setup
-
+> A Vue.js project
 ``` bash
 # install dependencies
 npm install
@@ -16,3 +37,9 @@ npm run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+
+### Other 
+- [audio](https://downloads.khinsider.com/game-soundtracks/album/pokemon-gameboy-sound-collection)
+- [background-image](https://wallpapercave.com/w/wp2513249)
