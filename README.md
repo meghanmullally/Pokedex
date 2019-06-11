@@ -41,6 +41,13 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 
 
 
+## SEO
+
+When reading about the pros and cons of SEO, I noticed there are a lot of things I want to improve on with my app. Thinking of a friendly user domain name, prerending / rendering my app so it helps with reading and indexing. Making sure to use the meta tags. 
+
+
+
+
 ### Other 
 - [audio](https://downloads.khinsider.com/game-soundtracks/album/pokemon-gameboy-sound-collection)
 - [background-image](https://wallpapercave.com/w/wp2513249)
