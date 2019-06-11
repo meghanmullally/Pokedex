@@ -7,9 +7,9 @@ There are three pages; home, types, pokemon.
 If you click on the header image the opening theme song of the Pokemon game will start playing 
 
 
-![Home page screenshot](home-screenshot)
-![Types page screenshot](types-screenshot)
-![Pokemon list page screenshot](pokemon-screenshot)
+![Home page screenshot](https://github.com/meghanmullally/Pokedex/blob/master/vue-cli/public/home-screenshot.png?raw=true)
+![Type page screenshot](https://github.com/meghanmullally/Pokedex/blob/master/vue-cli/public/types-screenshot.png?raw=true)
+![Pokemon list page screenshot](https://github.com/meghanmullally/Pokedex/blob/master/vue-cli/public/pokemon-screenshot.png?raw=true)
 
 
 ## Built with 
